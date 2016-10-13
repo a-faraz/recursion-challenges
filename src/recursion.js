@@ -54,6 +54,18 @@ var arraySum = function(array) {
 
 // 4. Check if a number is even.
 var isEven = function(n) {
+	// if after -2 multiple times the number is 0 it means it was even to start
+	if (n === 0) {
+		return true;
+		// if after -2 multiple times the number is 1 it means it was odd to start
+	} else if (n === 1) {
+		return false;
+	} else {
+		// subtract 2 from the number and run the function on it again
+		n = n - 2;
+		isEven(n);
+	}
+
 };
 
 // 5. Sum all integers below a given integer.
