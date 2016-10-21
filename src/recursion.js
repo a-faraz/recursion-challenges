@@ -83,6 +83,7 @@ var sumBelow = function(n) {
 	}
 };
 
+
 // 6. Get the integers in range (x, y).
 // Example:  range(2, 9);  // [3, 4, 5, 6, 7, 8]
 var range = function(x, y) {
